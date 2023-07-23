@@ -3,16 +3,11 @@ development:
   encoding: unicode
   database: personalblog_doz7
   pool: 5
-  username: blog
-  password:
-  host: localhost
 
+ 
 production:
   adapter: postgresql
   encoding: unicode
   database: personalblog_doz7
-  pool: 5
-  username: personalblog
-  password: <%= ENV['POSTGRESQL_PASSWORD'] %>
-  host: dpg-ciu98cdiuiedpv7fmv3g-a
+  url: <%= ENV['POSTGRES_URL'] %>
 
