@@ -1,0 +1,25 @@
+<div id="<%= dom_id post %>">
+  <h1 class="title"> <%= post.title %> </h1>
+
+  <div class="showbox">
+  <%= link_to "<- Back to Posts", posts_path %>
+  <span> Posted On <%= post.created_at.strftime("%Y-%m-%d %H:%M") %> </span>
+
+  <%= link_to "Edit", edit_post_path(@post) %> 
+ 
+
+  <%= button_to "Delete", @post, method: :delete %>
+</div>
+ 
+    <%= post.content %>
+  
+   
+
+  <p>
+    <strong>Tag:</strong>
+    <%= post.tag %>
+  </p>
+
+  
+
+</div>

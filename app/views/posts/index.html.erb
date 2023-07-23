@@ -1,0 +1,17 @@
+<p style="color: green"><%= notice %></p>
+
+<div class="home">
+
+<h1 class="title">Posts</h1>
+
+<div class="posts">
+
+  <% @posts.each do |post| %>
+    <p> <%= post.created_at.strftime("%d-%B-%Y") %> </p>
+    <p> <b><%= link_to post.title, post %></b></p>
+    <p> <%= link_to "Edit", edit_post_path(post) %> </p>
+  <% end %>
+</div>
+
+<%= link_to "New post" , new_post_path , :class => 'small_text' %>
+</div>

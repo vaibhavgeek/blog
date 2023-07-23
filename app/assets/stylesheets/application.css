@@ -1,0 +1,95 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import "./actiontext.scss";
+.posts {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 10px;
+    width: 800px;
+    margin: auto;
+}
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+body {
+    color: #e7e8eb;
+    background-color: #2d2d2d;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.hanger {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    color: black;
+    border:#2d2d2d 2px solid;
+    margin:auto;
+    padding-left: 20px;
+    width: 900px;
+    display: flex;
+    justify-content: center;
+}
+section.header {
+    height: 80px;
+    
+    border: #e7e8eb 3px dotted;
+    background-color: darkkhaki;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.showbox {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+input[type=text] {
+    width: 100%;
+    padding: 6px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+input[type=button] , input[type=submit] {
+    display: inline-block;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 4px;
+    font-size: 13px;
+    height: 30px;
+    background-color: #0000000d;
+    color: #0e0e10;
+    padding: 0 20px;
+   
+}
+input[type=button]:hover , input[type=submit]:hover {
+   background-color: #0000001a;
+    
+}
